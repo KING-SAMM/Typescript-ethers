@@ -6,7 +6,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 export const connectMetamask = async () => 
 {
     const addressDiv = document.querySelector<HTMLDivElement>('#address')!
-    const connectedSpan = document.querySelector('.connected')!
+    const h2 = document.querySelector<HTMLH2Element>('.addressHead')!
     await provider.send("eth_requestAccounts", [])
 
     const signer = await provider.getSigner();
@@ -16,11 +16,15 @@ export const connectMetamask = async () =>
     console.log(signer);
 
     addressDiv.innerHTML = address;
-    connectedSpan.style.padding = `5px 10px`;
-    connectedSpan.style.backgroundColor = `#008080`;
-    connectedSpan.style.color = `#ffffff`;
-    connectedSpan.innerHTML = 'connected';
+    // connectedSpan.innerHTML = 'connected';
     
+}
+
+export const getContract = () => 
+{
+  console.log("This is the contract");
+  const contract = document.querySelector<HTMLDivElement>('#contract')!
+  contract.innerHTML = `This is the contract`
 }
 
 

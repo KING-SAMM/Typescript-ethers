@@ -11,3 +11,22 @@ h1 {
   font-size: 3rem;
   color: navy;
 }
+
+.addressHead {
+  margin-bottom: 2px;
+}
+
+.addressHead::after {
+  content: " ";
+  padding: 5px 10px;
+  background: #006a98;
+  color: #006a98;
+  border-radius: 50%;
+  font-size: 7px;
+}
+
+#address {
+  margin: 5px 0;
+}
+
+
