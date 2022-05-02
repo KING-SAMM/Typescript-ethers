@@ -12,17 +12,34 @@ h1 {
   color: navy;
 }
 
-.addressHead {
-  margin-bottom: 2px;
+#button {
+  /* display: block; */
+  /* margin-bottom: 10px; */
 }
 
-.addressHead::after {
+.addressHead {
+  /* display: inline-block; */
+  margin-bottom: 2px;
+  /* margin-top: 10px; */
+}
+
+/* .addressHead::after {
   content: " ";
   padding: 5px 10px;
   background: #006a98;
   color: #006a98;
   border-radius: 50%;
   font-size: 7px;
+} */
+
+.status {
+  visibility: hidden;;
+  content: " ";
+  padding: 5px 10px;
+  background: #006a98;
+  color: #ffffff;
+  border-radius: 7px;
+  font-size: 12px;
 }
 
 #address {
